@@ -1,0 +1,19 @@
+{
+    "name": "rodrom/chexem",
+    "description": "Assign a group when a verified email exists in an external database.",
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rodrom\\Chexem\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Chexem"
+        }
+    }
+}
