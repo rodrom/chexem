@@ -30,15 +30,14 @@ class AssignGroupFromExternalDb
             'username' => $external['username'],
             'password' => $external['password'],
         ]);
-        
+
         $exists = false;
 
         try {
             $exists = $capsule
             ->getConnection()
             ->table($external['table'])
-            ->whereRaw('LOWER(?) = ?', [
-                $external['column'],
+            ->whereRaw("LOWER({$external['column']}) = ?", [
                 strtolower($user->email)
             ])
             ->exists();
@@ -50,6 +49,8 @@ class AssignGroupFromExternalDb
                     'error' => $e->getMessage(),
                 ]
             );
+
+            return;
         }
 
         if (!$exists) {
