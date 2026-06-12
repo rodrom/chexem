@@ -3,6 +3,16 @@
     "description": "Assign a group when a verified email exists in an external database.",
     "type": "flarum-extension",
     "license": "MIT",
+    "keywords": ["flarum", "extension", "groups", "external"],
+    "homepage": "https://github.com/rodrom/chexem",
+    "authors": [
+        {
+            "name": "rodrom",
+            "email": "dev@rodrom.eu",
+            "homepage": "https://rodrom.eu",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "flarum/core": "^1.8"
     },
@@ -13,7 +23,12 @@
     },
     "extra": {
         "flarum-extension": {
-            "title": "Chexem"
+            "title": "Chexem",
+            "icon": {
+                "name": "fas fa-check-double",
+                "backgroundColor": "#1B0654",
+                "color": "#fff"
+            }
         }
     }
 }

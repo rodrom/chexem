@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.2] - 2026-06-12
+
+### Added
+
+- Details in `composer.json` about the extension and the author.
+
 ## [0.1.1] - 2026-06-11
 
 ### Fix
